@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kardianos/govendor/internal/gt"
+	"github.com/pkieltyka/govendor/internal/gt"
 )
 
 func Vendor(g *gt.GopathTest, name, argLine, expectedOutput string) {

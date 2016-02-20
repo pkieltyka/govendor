@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/kardianos/govendor/internal/pathos"
-	os "github.com/kardianos/govendor/internal/vos"
-	"github.com/kardianos/govendor/vendorfile"
+	"github.com/pkieltyka/govendor/internal/pathos"
+	os "github.com/pkieltyka/govendor/internal/vos"
+	"github.com/pkieltyka/govendor/vendorfile"
 )
 
 // findImportDir finds the absolute directory. If rel is empty vendor folders

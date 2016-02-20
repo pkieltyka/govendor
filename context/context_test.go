@@ -14,8 +14,8 @@ import (
 	"strings"
 	"testing"
 
-	. "github.com/kardianos/govendor/context"
-	"github.com/kardianos/govendor/internal/gt"
+	. "github.com/pkieltyka/govendor/context"
+	"github.com/pkieltyka/govendor/internal/gt"
 )
 
 var relVendorFile = filepath.Join("vendor", "vendor.json")

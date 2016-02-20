@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/kardianos/govendor/internal/pathos"
-	os "github.com/kardianos/govendor/internal/vos"
+	"github.com/pkieltyka/govendor/internal/pathos"
+	os "github.com/pkieltyka/govendor/internal/vos"
 )
 
 // CopyPackage copies the files from the srcPath to the destPath, destPath

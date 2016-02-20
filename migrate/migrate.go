@@ -14,8 +14,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/kardianos/govendor/context"
-	"github.com/kardianos/govendor/vendorfile"
+	"github.com/pkieltyka/govendor/context"
+	"github.com/pkieltyka/govendor/vendorfile"
 )
 
 // From is the current vendor schema.

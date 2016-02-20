@@ -16,8 +16,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	. "github.com/kardianos/govendor/context"
-	"github.com/kardianos/govendor/migrate"
+	. "github.com/pkieltyka/govendor/context"
+	"github.com/pkieltyka/govendor/migrate"
 )
 
 var helpFull = `govendor: copy go packages locally. Uses vendor folder.
@@ -37,9 +37,9 @@ govendor {add, update, remove} [options] ( +status or import-path-filter )
 	Options:
 		-n           dry run and print actions that would be taken
 		-tree        copy package(s) and all sub-folders under each package
-		
+
 		The following may be replaced with something else in the future.
-		-short       if conflict, take short path 
+		-short       if conflict, take short path
 		-long        if conflict, take long path
 
 govendor migrate [auto, godep, internal]
@@ -59,19 +59,19 @@ Flags
 	-n		print actions but do not run them
 	-short	chooses the shorter path in case of conflict
 	-long	chooses the longer path in case of conflict
-	
+
 "import-path-filter" arguements:
 	May be a literal individual package:
 		github.com/user/supercool
 		github.com/user/supercool/anotherpkg
-	
+
 	Match on any exising Go package that the project uses under "supercool"
 		github.com/user/supercool/...
-		
+
 	Match the package "supercool" and also copy all sub-folders.
 	Will copy non-Go files and Go packages that aren't used.
 		github.com/user/supercool/^
-	
+
 	Same as specifying:
 	-tree github.com/user/supercool
 
@@ -125,9 +125,9 @@ var helpAdd = `govendor add [options] ( +status or import-path-filter )
 	Options:
 		-n           dry run and print actions that would be taken
 		-tree        copy package(s) and all sub-folders under each package
-		
+
 		The following may be replaced with something else in the future.
-		-short       if conflict, take short path 
+		-short       if conflict, take short path
 		-long        if conflict, take long path
 `
 
@@ -136,9 +136,9 @@ var helpUpdate = `govendor update [options] ( +status or import-path-filter )
 	Options:
 		-n           dry run and print actions that would be taken
 		-tree        copy package(s) and all sub-folders under each package
-		
+
 		The following may be replaced with something else in the future.
-		-short       if conflict, take short path 
+		-short       if conflict, take short path
 		-long        if conflict, take long path
 `
 

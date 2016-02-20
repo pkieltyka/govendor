@@ -13,8 +13,8 @@ import (
 	"strings"
 
 	"github.com/dchest/safefile"
-	"github.com/kardianos/govendor/internal/pathos"
-	os "github.com/kardianos/govendor/internal/vos"
+	"github.com/pkieltyka/govendor/internal/pathos"
+	os "github.com/pkieltyka/govendor/internal/vos"
 )
 
 // Rewrite rewrites files to the local path.
