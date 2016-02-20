@@ -495,7 +495,8 @@ func (ctx *Context) ModifyImport(sourcePath string, mod Modify) error {
 		return err
 	}
 	if mod == Add && localExists {
-		return ErrPackageExists{path.Join(ctx.RootImportPath, ctx.VendorFolder, canonicalImportPath)}
+		fmt.Printf("note: %s package exists in vendor, but copying it again..\n", canonicalImportPath)
+		//return ErrPackageExists{path.Join(ctx.RootImportPath, ctx.VendorFolder, canonicalImportPath)}
 	}
 	dprintf("stage 2: begin!\n")
 	switch mod {
